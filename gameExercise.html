@@ -8,12 +8,19 @@
         <body>
                 <main class="container">
                         <div id="header">
-                                <h1>NUM.NUTZ!</h1>
-                                <H3>The Number Guessing Game That Will Drive You Crazy</H3>
-                        </div>
-                        <div id="scores">
+                                <h1 id="game-name">NUM.NUTZ!</h1>
+                                <h3 id="game-tagline">The Number Guessing Game That Will Drive You Crazy</h3>
+                                <h4 id="game-instructions">Guess a whole number between 1 and 100  </h4>
 
                         </div>
+                        <input type="text" name="guess" id="guess"  />
+                        <button id="guess-button">Start</button>
+                        <button id="reset-button">Reset</button>
+                        
+                        <p id="feedback"></p>
+                        <p id="guess-counter">Guesses: 0</p>
+                        <p id="timer">Time: 0:00</p>
+                        <h5 id="game-more-instructions">(Use the Reset button to start over - type in 'quit' to exit the game)</h5>
                 </main>
                 <script src="gameEx.js"></script>
         </body>
